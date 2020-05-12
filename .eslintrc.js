@@ -20,5 +20,6 @@ module.exports = {
     "no-restricted-syntax": "off",
     "guard-for-in": "off",
     "no-param-reassign": "off",
+    "max-len": "off",
   },
 };
