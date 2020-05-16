@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* ********************************************************************************************
  *                                                                                            *
  * Plese read the following tutorial before implementing tasks:                               *
@@ -521,6 +522,7 @@ function distinct(arr) {
 function group(array, keySelector, valueSelector) {
   const set = Array.from(new Set(array.map((i) => keySelector(i))));
   const map = new Map();
+  // eslint-disable-next-line max-len
   set.map((i) => map.set(i, array.filter((el) => keySelector(el) === i).map((item) => valueSelector(item))));
   return map;
 }
